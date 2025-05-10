@@ -1,0 +1,128 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // ========================================================================
+  // AI Settings
+  // ========================================================================
+  "agent": {
+    "model_parameters": [],
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  // =======================================================================
+  // LSP Settings
+  // =======================================================================
+  "file_types": {
+    "CMake": [
+      "CMakeLists.txt"
+    ]
+  },
+  "languages": {
+    "Python": {
+      "language_servers": [
+        "pyright",
+        "ruff"
+      ],
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
+  // =======================================================================
+  // UI Settings
+  // ======================================================================
+  "ui_font_size": 15,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_fallbacks": [
+    "Microsoft YaHei UI"
+  ],
+  "buffer_font_size": 14,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_fallbacks": [
+    "Microsoft YaHei UI"
+  ],
+  "buffer_font_features": {
+    "calt": true
+  },
+  // Theme
+  "icon_theme": "Catppuccin Macchiato",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato"
+  },
+  // Terminal
+  "terminal": {
+    "shell": {
+      "program": "pwsh -nologo"
+    },
+    "blinking": "on",
+    "cursor_shape": "bar",
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_fallbacks": [
+      "Microsoft YaHei UI"
+    ],
+    "line_height": "standard"
+  },
+  // Tab
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "errors"
+  },
+  // Panels
+  "collaboration_panel": {
+    "button": false
+  },
+  "git_panel": {
+    "button": true,
+    "dock": "left",
+    "default_width": 240
+  },
+  "outline_panel": {
+    "button": true,
+    "dock": "left",
+    "default_width": 240
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "default_width": 240,
+    "show_diagnostics": "errors"
+  },
+  // =======================================================================
+  // Other Settings
+  // =====================================================================
+  "auto_update": false,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "format_on_save": "language_server",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  }
+}

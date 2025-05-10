@@ -1,0 +1,59 @@
+{
+    "catppuccin.accentColor": "rosewater",
+    "dotnet.formatting.organizeImportsOnFormat": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.fontFamily": "'JetbrainsMono NF', 'Microsoft Yahei'",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.mouseWheelZoom": true,
+    "explorer.compactFolders": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "extensions.ignoreRecommendations": true,
+    "files.autoGuessEncoding": true,
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "notebook.formatOnSave.enabled": true,
+    "git.blame.editorDecoration.enabled": true,
+    "notebook.lineNumbers": "on",
+    "right-click-open-here.contextMenu.parentFolder.showParentFolderNewWindow": false,
+    "right-click-open-here.contextMenu.parentFolder.showParentFolderSameWindow": false,
+    "security.workspace.trust.enabled": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "telemetry.telemetryLevel": "off",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "explorer.fileNesting.patterns": {
+        "pyproject.toml": "uv.lock",
+        "*.axaml": "$(capture).*.cs",
+        "*.xaml": "$(capture).*.cs",
+        "*.razor": "$(capture).*.css"
+    },
+    "fileheader.configObj": {
+        "language": {
+            "*": {
+                "head": "/*\r\n==============================================================================",
+                "middle": " * @",
+                "end": "==============================================================================\r\n*/"
+            },
+            "ipynb/py": {
+                "head": "\"\"\"\r\n==============================================================================",
+                "middle": " * @",
+                "end": "==============================================================================\r\n\"\"\""
+            }
+        },
+        "autoAdd": false
+    },
+    "fileheader.customMade": {
+        "FilePath": "only file name",
+        "Author": "git config user.name && git config user.email",
+        "Date": "Do not edit",
+        "LastEditors": "git config user.name",
+        "LastEditTime": "Do not Edit",
+        "custom_string_obkoro1_copyright": "${now_year} by git config user.name, All Rights Reserved.",
+        "Descripttion": ""
+    }
+}
