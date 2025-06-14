@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Debug program",
+    "adapter": "CodeLLDB",
+    "request": "launch",
+    "program": "$ZED_WORKTREE_ROOT/$EXE_PATH",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "build": "xmake build (debug)"
+  },
+  {
+    "label": "Debug program (with args)",
+    "adapter": "CodeLLDB",
+    "request": "launch",
+    "program": "$ZED_WORKTREE_ROOT/$EXE_PATH",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "args": [
+      "${1:arg1}",
+      "${2:arg2}"
+    ],
+    "build": "xmake build (debug)"
+  }
+]
