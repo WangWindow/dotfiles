@@ -1,0 +1,44 @@
+[
+  {
+    "label": "xmake build (debug)",
+    "command": "sh",
+    "args": [
+      "-c",
+      "xmake f -m debug && xmake build"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "xmake build (release)",
+    "command": "sh",
+    "args": [
+      "-c",
+      "xmake f -m release && xmake build"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "xmake clean",
+    "command": "xmake",
+    "args": [
+      "clean"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "xmake run",
+    "command": "xmake",
+    "args": [
+      "run"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "xmake install",
+    "command": "xmake",
+    "args": [
+      "install"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  }
+]
