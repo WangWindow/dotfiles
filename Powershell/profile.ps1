@@ -19,3 +19,5 @@ function set-vs {
 
 # Install-Module -Name Terminal-Icons -Repository PSGallery
 # Import-Module -Name Terminal-Icons
+
+# oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\montys.omp.json | Invoke-Expression
