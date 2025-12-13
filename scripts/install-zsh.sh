@@ -97,13 +97,13 @@ ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 echo "🔌 安装插件..."
 
 if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
-  git clone --depth=1 https://gitee.com/mirrors/zsh-users__zsh-autosuggestions.git "$ZSH_CUSTOM/plugins/zsh-autosuggestions" || \
-  git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+  git clone --depth=1 https://gh.llkk.cc/https://github.com/zsh-users/zsh-autosuggestions.git "$ZSH_CUSTOM/plugins/zsh-autosuggestions" || \
+  git clone --depth=1 https://github.moeyy.xyz/https://github.com/zsh-users/zsh-autosuggestions.git "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
 fi
 
 if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
-  git clone --depth=1 https://gitee.com/mirrors/zsh-users__zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" || \
-  git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
+  git clone --depth=1 https://gh.llkk.cc/https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" || \
+  git clone --depth=1 https://github.moeyy.xyz/https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 fi
 
 # 生成 .zshrc
@@ -121,20 +121,6 @@ source \$ZSH/oh-my-zsh.sh
 EOF
 
 echo "📝 已生成 ~/.zshrc（主题：robbyrussell）"
-
-# 可选：迁移 .bashrc
-echo ""
-read -p "❓ 是否从 ~/.bashrc 迁移自定义配置？(建议用 # USER CUSTOM 标记) (y/N): " -n 1 -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-  if grep -q "# USER CUSTOM" ~/.bashrc 2>/dev/null; then
-    sed -n '/# USER CUSTOM/,\$p' ~/.bashrc > ~/.bashrc_custom
-    echo "✅ 已保存至 ~/.bashrc_custom"
-  else
-    echo "# alias ll='ls -lh'" > ~/.bashrc_custom
-    echo "⚠️  已创建示例 ~/.bashrc_custom，请按需编辑。"
-  fi
-fi
 
 # 设置默认 shell
 echo ""
