@@ -1,0 +1,59 @@
+BasedOnStyle: Microsoft # LLVM, Google, Chromium, Mozilla, WebKit, Microsoft, GNU
+IndentWidth: 4 # 2, 4, 8
+TabWidth: 4 # 2, 4, 8
+UseTab: Never # Always, ForIndentation, Never
+BreakBeforeBraces: Attach # Attach, Linux, Stroustrup, Allman, GNU, WebKit, Custom
+AllowShortFunctionsOnASingleLine: false # true, false
+AllowShortLambdasOnASingleLine: false # true, false
+AllowShortIfStatementsOnASingleLine: false # true, false
+AllowShortLoopsOnASingleLine: false # true, false
+ColumnLimit: 120 # 0, [1, inf]
+SpacesInParentheses: false # true, false
+SpaceAfterCStyleCast: false # true, false
+SpaceBeforeAssignmentOperators: true # true, false
+SpaceBeforeParens: ControlStatements # Always, Never, ControlStatements, NonEmptyParentheses
+SpaceInEmptyParentheses: false # true, false
+Cpp11BracedListStyle: false # true, false
+DerivePointerAlignment: false # true, false
+PointerAlignment: Left # Left, Right, Middle
+IndentCaseLabels: true # true, false
+IndentGotoLabels: true # true, false
+IndentPPDirectives: None # None, AfterHash, BeforeHashAndAfterHash
+SortIncludes: true # true, false
+AlignConsecutiveAssignments: true # true, false
+AlignConsecutiveDeclarations: true # true, false
+AlignTrailingComments: true # true, false
+AlignAfterOpenBracket: Align # Align, DontAlign, AlwaysBreak
+AlignOperands: true # true, false
+AlignEscapedNewlines: Right # Right, Left, DontAlign
+
+# Additional settings for more control
+AccessModifierOffset: -4 # -4, -3, -2, -1, 0, 1, 2, 3, 4
+AlwaysBreakTemplateDeclarations: Yes # Yes, No, MultiLine
+BinPackArguments: false # true, false
+BinPackParameters: false # true, false
+BreakBeforeBinaryOperators: NonAssignment # NonAssignment, None, All
+BreakBeforeTernaryOperators: true # true, false
+BreakConstructorInitializersBeforeComma: false # true, false
+ConstructorInitializerIndentWidth: 4 # 2, 4, 8
+ContinuationIndentWidth: 4 # 2, 4, 8
+IncludeBlocks: Preserve # Preserve, Merge, Regroup
+IncludeIsMainRegex: '(Test)?$' # .*, ^.*$, (Test)?$, ^.*Test$
+IndentWrappedFunctionNames: false # true, false
+KeepEmptyLinesAtTheStartOfBlocks: false # true, false
+MaxEmptyLinesToKeep: 1 # 0, [1, inf]
+NamespaceIndentation: None # None, Inner, All
+PenaltyBreakBeforeFirstCallParameter: 19 # [0, inf]
+PenaltyBreakComment: 300 # [0, inf]
+PenaltyBreakFirstLessLess: 120 # [0, inf]
+PenaltyBreakString: 1000 # [0, inf]
+PenaltyExcessCharacter: 1000000 # [0, inf]
+PenaltyReturnTypeOnItsOwnLine: 200 # [0, inf]
+ReflowComments: true # true, false
+SortUsingDeclarations: true # true, false
+SpaceAfterTemplateKeyword: true # true, false
+SpaceBeforeCpp11BracedList: false # true, false
+SpaceBeforeCtorInitializerColon: true # true, false
+SpaceBeforeInheritanceColon: true # true, false
+SpaceBeforeRangeBasedForLoopColon: true # true, false
+SpacesBeforeTrailingComments: 1 # [0, inf]

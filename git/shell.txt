@@ -1,0 +1,7 @@
+# 执行以下命令进行配置：
+git config --global user.name "WangWindow"
+git config --global user.email "1598593280@qq.com"
+git config --global init.defaultBranch main
+
+# 然后执行以下命令生成秘钥：
+ssh-keygen -t rsa -C "1598593280@qq.com"

@@ -1,0 +1,2 @@
+# 下载地址
+https://mirrors.ustc.edu.cn/msys2/distrib/msys2-x86_64-latest.exe
