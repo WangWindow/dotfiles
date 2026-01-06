@@ -1,18 +1,18 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
 function fish_greeting
 end
 
-function set-proxy
-    git config --global http.proxy "http://127.0.0.1:7897"
-    git config --global https.proxy "http://127.0.0.1:7897"
-    echo "set OK!"
-end
+alias ff fastfetch
+alias zed zeditor
 
-function unset-proxy
-    git config --global --unset http.proxy
-    git config --global --unset https.proxy
-    echo "unset OK!"
-end
+set -gx UV_DEFAULT_INDEX "https://mirrors.ustc.edu.cn/pypi/simple"
+set -gx UV_PYTHON_INSTALL_MIRROR "https://registry.npmmirror.com/-/binary/python-build-standalone"
+set -gx RUSTUP_UPDATE_ROOT "https://mirrors.ustc.edu.cn/rust-static/rustup"
+set -gx RUSTUP_DIST_SERVER "https://mirrors.ustc.edu.cn/rust-static"
+set -gx HF_ENDPOINT "https://hf-mirror.com"
 
-set -x UV_DEFAULT_INDEX 'https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple'
-set -x RUSTUP_UPDATE_ROOT 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'
-set -x RUSTUP_DIST_SERVER 'https://mirrors.tuna.tsinghua.edu.cn/rustup'
+fish_add_path "$HOME/.local/bin"
+
+# oh-my-posh init fish --config $HOME/my.json | source
