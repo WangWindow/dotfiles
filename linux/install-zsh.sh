@@ -113,11 +113,17 @@ ZSHRC="$HOME/.zshrc"
 cat > "$ZSHRC" << EOF
 export ZSH="\$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(git z extract web-search zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git extract web-search zsh-autosuggestions zsh-syntax-highlighting)
 source \$ZSH/oh-my-zsh.sh
 
-# 用户自定义配置
-[ -f ~/.bashrc_custom ] && source ~/.bashrc_custom
+unsetopt nomatch
+
+# === Zsh cache/history redirect to ~/.cache/zsh  ===
+ZSH_CACHE_DIR="$HOME/.cache/zsh"
+mkdir -p "$ZSH_CACHE_DIR"
+HISTFILE="$ZSH_CACHE_DIR/.zsh_history"
+ZCOMPDIR="$ZSH_CACHE_DIR"
+ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump-${HOST}-${ZSH_VERSION}"
 EOF
 
 echo "📝 已生成 ~/.zshrc（主题：robbyrussell）"
